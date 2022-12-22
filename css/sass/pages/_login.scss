@@ -1,0 +1,102 @@
+.login-section {
+  // login slider
+  .login-slider {
+    height: 40%;
+    width: 100%;
+    .swiper-wrapper {
+      .swiper-slide {
+        position: relative;
+        @include full-w-h;
+        img {
+          @include full-w-h;
+          object-fit: cover;
+          // border-radius: 10px;
+          border-radius: 25px;
+        }
+        .text {
+          position: absolute;
+          left: 50%;
+          bottom: 6%;
+          transform: translateX(-50%);
+          z-index: 1;
+          color: $white-color;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    .swiper-pagination-bullet {
+      background-color: transparent;
+      border: 2px solid $white-color;
+      width: 11px;
+      height: 11px;
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $white-color;
+    }
+  }
+  .login-form {
+    .welcome-text {
+      h2 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 0px;
+      }
+      h3 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+    }
+    .inp-holder {
+      border-bottom: 1px solid $black-color;
+      padding-bottom: 6px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      .holder {
+        width: 100%;
+        @include flex-center;
+        justify-content: flex-start;
+        gap: 6px;
+      }
+      input {
+        border: none;
+        width: 100%;
+        font-size: 15px;
+      }
+      label {
+        display: block;
+        font-weight: 700;
+      }
+    }
+  }
+  .remember {
+    .form-check-input {
+      width: 17px;
+      height: 17px;
+      &:checked {
+        background-color: $alt-color;
+        border-color: $alt-color;
+      }
+      &:focus {
+        border-color: #ae86fe;
+        box-shadow: 0 0 0 0.25rem hsl(260deg 98% 52% / 25%);
+      }
+    }
+  }
+  .container-input {
+    @include flex-between;
+    .code-inp {
+      width: 48px;
+      height: 48px;
+      border-radius: 10px;
+      border: 2px solid $yellow-color;
+      text-align: center;
+      font-size: 25px;
+    }
+  }
+}
