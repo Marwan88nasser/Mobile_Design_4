@@ -1,22 +1,21 @@
 if (document.querySelector(".main-swiper")) {
-  const swiperElement = document.querySelector(".main-swiper")
-  const swiper = new Swiper(swiperElement, {
-    spaceBetween: 10,
-    slidesPerView: 1,
-    centeredSlides: true,
-    loop: true,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
+  const swiperElement = document.querySelectorAll(".main-swiper");
+  swiperElement.forEach(swiperEle => {
+    const swiper = new Swiper(swiperEle, {
+      spaceBetween: 10,
+      slidesPerView: 1,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  })
 }
 
 if (document.querySelector('.login-slider')) {
@@ -60,15 +59,3 @@ if (document.querySelector("#popup_show")) {
 // initialize bootstrap tooltips
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-
-$('#filter-option').selectize({
-  plugins: ["remove_button"],
-  delimiter: ",",
-  persist: false,
-  create: function (input) {
-    return {
-      value: input,
-      text: input,
-    };
-  },
-});

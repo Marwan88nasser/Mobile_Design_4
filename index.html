@@ -1,533 +1,430 @@
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تصميم هاتف</title>
-    <!-- Bootstrap Framework Css File -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-    <!--  Normalize Css File -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <!--  swiper Css File -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <!-- Main  Css File -->
-    <link rel="stylesheet" href="css/main.css" />
-    <!-- Font Awesome Library File -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <!-- Box Icon Library Css File Cdn -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Google Fonts Cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <nav class="top-nav py-2 not-print">
-      <div class="container-md">
-        <div class="nav-content">
-          <div class="navbar">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item nav-img">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLRrfGmicNOQwEeoCv7JtxJ69QOxUfJq0eyg&usqp=CAU" class="img-user" alt="">
-                    <h5>محمد المهدي</h5>
-                    <h6>+1 (141) 437-8785</h6>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">
-                      <i class="nav-icon bx bx-home"></i>
-                      الرئيسية
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class='bx bx-error-alt'></i>
-                      عن المنصه
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class='bx bx-user'></i>
-                      إنضم لنا / الشركات
-                    </a>
-                  </li>
-                </ul>
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-5">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class='bx bx-check-shield'></i>
-                      سياسة الخصوصية
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class='bx bx-book-bookmark'></i>
-                      شروط الاستخدام
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class='bx bx-revision'></i>
-                      سياسة الارجاع
-                    </a>
-                  </li>
-                </ul>
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-5">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      <i class='bx bx-log-in'></i>
-                      تسجيل الخروج
-                    </a>
-                  </li>
-                </ul>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تصميم هاتف</title>
+  <!-- Bootstrap Framework Css File -->
+  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+  <!--  Normalize Css File -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!--  swiper Css File -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <!-- Main  Css File -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Awesome Library File -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Box Icon Library Css File Cdn -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Google Fonts Cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <nav class="top-nav py-2 not-print">
+    <div class="container-md">
+      <div class="nav-content">
+        <div class="navbar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
             </div>
-            <div class="image-holder">
-              <a href="#">
-                <span class="badge">0</span>
-                <img src="img/Notification.png" alt="Notification" width="22" height="26">
-              </a>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item nav-img">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLRrfGmicNOQwEeoCv7JtxJ69QOxUfJq0eyg&usqp=CAU"
+                    class="img-user" alt="">
+                  <h5>محمد المهدي</h5>
+                  <h6>+1 (141) 437-8785</h6>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    <i class="nav-icon bx bx-home"></i>
+                    الرئيسية
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class='bx bx-error-alt'></i>
+                    عن المنصه
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class='bx bx-user'></i>
+                    إنضم لنا / الشركات
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-5">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class='bx bx-check-shield'></i>
+                    سياسة الخصوصية
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class='bx bx-book-bookmark'></i>
+                    شروط الاستخدام
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class='bx bx-revision'></i>
+                    سياسة الارجاع
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-5">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class='bx bx-log-in'></i>
+                    تسجيل الخروج
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="img-holder">
-            <h1 class="m-0">
-              <a href="index.html">
-                <img src="img/LOGO.png" alt="" width="35" />
-              </a>
-            </h1>
+          <div class="image-holder">
+            <a href="#">
+              <span class="badge">0</span>
+              <img src="img/Notification.png" alt="Notification" width="22" height="26">
+            </a>
           </div>
         </div>
+        <div class="img-holder">
+          <h1 class="m-0">
+            <a href="index.html">
+              <img src="img/LOGO.png" alt="" width="35" />
+            </a>
+          </h1>
+        </div>
       </div>
-    </nav>
-    <section class="section section-home">
+    </div>
+  </nav>
+  <section class="section">
       <!-- Start Landing -->
       <div class="landing-page">
-      <div class="container">
-        <div class="box-content">
-          <h1 class="fw-bold title m-0 mb-3">دعنا نساعدك!</h1>
-          <p class="text mb-2">
-            دعنا نساعدك في التخطيط لمناسبتك من خلال
-            <br>
-            لنجد مايناسبك بسهولة
-          </p>
-          <a href="#" class="main-btn btn-yellow">إبدا مع المنسق</a>
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="main-img-box">
+                    <img class="sp-h" src="img/login-slide3.jpg" alt="">
+                    <span class="bage top">خصم بنسبة 50% 🤩</span>
+                    <span class="bage bottom">إحجز الان موعدك &#128525;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="box-content">
+                <h1 class="fw-bold title m-0 mb-2 text-white">خصومات حصرية</h1>
+                <p class="text mb-3 text-white fs-12">
+                  وريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                  أيا كوممودو كونسيكيوات . ديواس
+                </p>
+                <a href="#" class="main-btn btn-yellow text-white">تصفح الخصومات</a>
+              </div>
+            </div>
+            <div class="col-12 mt-3">
+              <hr class="lan-hr">
+            </div>
+            <div class="col-12 mt-2">
+              <div class="last-offer pb-5">
+                <h3 class="lg-title text-center text-white">أخر العروض</h2>
+                  <div class="swiper main-swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide my-auto">
+                        <a href="#">
+                          <div class="box-img img-bg pink">
+                            <img src="img/hall.jpg" alt="">
+                            <span class="name">ديكورات و زينة</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide my-auto">
+                        <a href="#">
+                          <div class="box-img img-bg yellow">
+                            <img src="img/secret-garden.jpg" alt="">
+                            <span class="name">تزين وأزهار</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="swiper-slide my-auto">
+                        <a href="#">
+                          <div class="box-img img-bg main">
+                            <img src="img/login-slide2.jpg" alt="">
+                            <span class="name">تنسيق حفلات زفاف</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next swiper-btn"></div>
+                    <div class="swiper-button-prev swiper-btn"></div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 mt-4">
+              <hr class="lan-hr my-5">
+            </div>
+          </div>
         </div>
-      </div>
       </div>
       <!-- End Linding -->
-      <!-- Satrt your occasions -->
-      <div class="your-occasions py-5">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between mb-4">
-            <h2 class="lg-title">
-              مناسباتك
-            </h2>
-            <a href="#" class="main-btn btn-yellow "> 
-              <i class="fa-solid fa-circle-plus"></i>
-              إنشاء مناسبة
-            </a>
-          </div>
-          <div class="d-flex flex-column gap-3">
-            <div class="box-occasions">
-              <div class="content">
-                <div class="header-box d-flex align-items-center justify-content-between mb-2">
-                  <h3>إسم المناسبة</h3>
-                  <div class="date text-center">
-                    التاريخ 
-                    <br>
-                    2022-2-5
-                  </div>
+    <!-- Start Sections -->
+    <div class="py-4">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <h4 class="lg-title mb-0">
+            التصنيفات الرئيسية
+          </h4>
+          <a href="#" class="main-btn btn-yellow btn-sm fw-bold">
+            عرض الكل
+          </a>
+        </div>
+        <div class="swiper main-swiper set-h">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide my-auto">
+              <a href="#">
+                <div class="box-img img-border">
+                  <img src="img/foods.webp" alt="">
+                  <span class="name">المأكولات</span>
                 </div>
-                <div class="time d-flex align-items-center">
-                  <div class="item">
-                    <div class="num">15</div>
-                    <div>يوما</div>
-                  </div>
-                  <div class="item">
-                    <div class="num">22</div>
-                    <div>ساعه</div>
-                  </div>
-                  <div class="item">
-                    <div class="num">50</div>
-                    <div>دقيقة</div>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class="box-occasions">
-              <div class="content">
-                <h1 class="d-flex align-items-center justify-content-center gap-2 m-0 mb-1">
-                  <i class="fa-solid fa-list-ul icon"></i>
-                  28
-                </h1>
-                  <div class="fs-6 text-center">
-                    خدمات مختارة
-                  </div>
-              </div>
-            </div>
-            <div class="box-occasions">
-              <div class="content">
-                <div class="d-flex align-items-end justify-content-center gap-1 mb-1">
-                  <h1 class="d-flex align-items-center justify-content-center gap-2 m-0 ">
-                    <i class="fa-solid fa-chart-line icon"></i>
-                    1500
-                  </h1>
-                  <span>ريال</span>
+            <div class="swiper-slide my-auto">
+              <a href="#">
+                <div class="box-img img-border">
+                  <img src="img/hall.jpg" alt="">
+                  <span class="name">القاعات</span>
                 </div>
-                  <div class="fs-6 text-center">
-                    الميزانية المنفقة
-                  </div>
-              </div>
+              </a>
+            </div>
+            <div class="swiper-slide my-auto">
+              <a href="#">
+                <div class="box-img img-border">
+                  <img src="img/login-slide3.jpg" alt="">
+                  <span class="name">تجهيزات الزفاف</span>
+                </div>
+              </a>
             </div>
           </div>
+          <div class="swiper-button-next swiper-btn"></div>
+          <div class="swiper-button-prev swiper-btn"></div>
         </div>
       </div>
-      <!-- End your occasions -->
-      <!-- Start Sections -->
-      <div class="sections py-5">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between mb-2">
-            <h2 class="lg-title">
-              الأقسام المتوفرة
-            </h2>
-            <a href="#" class="main-btn btn-yellow "> 
-              عرض الكل
-            </a>
-          </div>
-          <p class="mb-4">
-            أعثر علي مزودي الخدمات التي تحتاجها وخطط لمناسباتك بكل سهولة
-          </p>
-          <div class="swiper main-swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="" class="box-sections">
-                  <img src="./img/hall.jpg" alt="" class="bg-img">
-                  <div class="badge-box">
-                    مزود 25
-                  </div>
-                  <div class="title">
-                    القاعات
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="" class="box-sections">
-                  <img src="./img/foods.webp" alt="" class="bg-img">
-                  <div class="badge-box">
-                    مزود +50
-                  </div>
-                  <div class="title">
-                    المأكولات
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="" class="box-sections">
-                  <img src="./img/photography.jpg" alt="" class="bg-img">
-                  <div class="badge-box">
-                    مزود 10
-                  </div>
-                  <div class="title">
-                    التصوير
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="" class="box-sections">
-                  <img src="./img/decorated.webp" alt="" class="bg-img">
-                  <div class="badge-box">
-                    مزود 25
-                  </div>
-                  <div class="title">
-                    ديكورات وزينة
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="swiper-button-next swiper-btn"></div>
-            <div class="swiper-button-prev swiper-btn"></div>
-          </div>
+    </div>
+    <!-- End Sections -->
+    <div class="container-md">
+      <hr class="my-3">
+    </div>
+    <!-- Start last offers  -->
+    <div class="last-offers pb-2 pt-4">
+      <div class="container-md">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+          <h2 class="lg-title">
+            تصنيفات المناسبات
+          </h2>
+          <a href="#" class="main-btn btn-yellow btn-sm fw-bold">
+            عرض الكل
+          </a>
         </div>
-      </div>
-      <!-- End Sections -->
-      <!-- Start last offers  -->
-      <div class="last-offers py-5">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between mb-2">
-            <h2 class="lg-title">
-              أخر العروض
-            </h2>
-            <a href="#" class="main-btn btn-yellow "> 
-              عرض الكل
-            </a>
+        <div class="filters d-flex align-items-center gap-1 flex-wrap mb-3">
+          <button class="main-btn">التصنيف الاول</button>
+          <button class="main-btn">التصنيف الثاني</button>
+          <button class="main-btn opacity-0_5" disabled>التصنيف الثالث</button>
+          <button class="main-btn opacity-0_5" disabled>التصنيف الرابع</button>
+          <button class="main-btn opacity-0_5" disabled>التصنيف الخامس</button>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <div class="box-offer">
+            <div class="header-box">
+              <div class="d-flex justify-content-end">
+                <a href="" class="add-favorite">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
+              </div>
+              <img src="./img/decorated.webp" alt="" class="bg-img">
+            </div>
+            <div class="content">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <h6 class="lg-title fw-normal mb-0">
+                  إسم المناسبة
+                </h6>
+                <a href="#" class="main-btn ">
+                  إستغل العرض
+                </a>
+              </div>
+              <div class="text mb-3">
+                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="text-center">
+                  <div class="price d-flex align-items-end gap-1">
+                    <h4 class="mb-0">1500</h4>
+                    <span class="small-price">ريال</span>
+                  </div>
+                  <div class="old-price d-flex align-items-center gap-1">
+                    <del>1500</del>
+                    ريال
+                  </div>
+                </div>
+                <div class="info-user text-center">
+                  <div class="img-user">
+                    <img src="img/profile-picture.webp" alt="">
+                  </div>
+                  <div class="name">
+                    مزود الخدمة
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="mb-4">
-            إستغل العروض المقدمة من مزودي الخدمات وحافظ على ميزانيتك أثناء التحطيط.
-          </p>
-          <div class="d-flex flex-column gap-3">
-            <div class="box-offer">
-              <div class="header-box">
-                <div class="d-flex justify-content-end">
-                  <a href="" class="add-favorite">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-                <img src="./img/decorated.webp" alt="" class="bg-img">
+          <div class="box-offer">
+            <div class="header-box">
+              <div class="d-flex justify-content-end">
+                <a href="" class="add-favorite">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
               </div>
-              <div class="content">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <h6 class="lg-title fw-normal mb-0">
-                    إسم المناسبة
-                  </h6>
-                  <a href="#" class="main-btn "> 
-                    إستغل العرض
-                  </a>
-                </div>
-                <div class="text mb-3">
-                  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
-                  أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد    
-                </div>
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="text-center">
-                    <div class="price d-flex align-items-end gap-1">
-                      <h4 class="mb-0">1500</h4>
-                      <span class="small-price">ريال</span>
-                    </div>
-                    <div class="old-price d-flex align-items-center gap-1">
-                      <del>1500</del>
-                      ريال
-                    </div>
+              <img src="./img/foods.webp" alt="" class="bg-img">
+            </div>
+            <div class="content">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <h6 class="lg-title fw-normal mb-0">
+                  إسم المناسبة
+                </h6>
+                <a href="#" class="main-btn ">
+                  إستغل العرض
+                </a>
+              </div>
+              <div class="text mb-3">
+                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="text-center">
+                  <div class="price d-flex align-items-end gap-1">
+                    <h4 class="mb-0">1500</h4>
+                    <span class="small-price">ريال</span>
                   </div>
-                  <div class="info-user text-center">
-                    <div class="img-user">
-                      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="" >
-                    </div>
-                      <div class="name">
-                        مزود الخدمة
-                      </div>
-                    </div>
+                  <div class="old-price d-flex align-items-center gap-1">
+                    <del>1500</del>
+                    ريال
+                  </div>
+                </div>
+                <div class="info-user text-center">
+                  <div class="img-user">
+                    <img src="img/profile-picture.webp" alt="">
+                  </div>
+                  <div class="name">
+                    مزود الخدمة
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="box-offer">
-              <div class="header-box">
-                <div class="d-flex justify-content-end">
-                  <a href="" class="add-favorite">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-                <img src="./img/foods.webp" alt="" class="bg-img">
+          </div>
+          <div class="box-offer">
+            <div class="header-box">
+              <div class="d-flex justify-content-end">
+                <a href="" class="add-favorite">
+                  <i class="fa-regular fa-heart"></i>
+                </a>
               </div>
-              <div class="content">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <h6 class="lg-title fw-normal mb-0">
-                    إسم المناسبة
-                  </h6>
-                  <a href="#" class="main-btn "> 
-                    إستغل العرض
-                  </a>
-                </div>
-                <div class="text mb-3">
-                  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
-                  أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد    
-                </div>
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="text-center">
-                    <div class="price d-flex align-items-end gap-1">
-                      <h4 class="mb-0">1500</h4>
-                      <span class="small-price">ريال</span>
-                    </div>
-                    <div class="old-price d-flex align-items-center gap-1">
-                      <del>1500</del>
-                      ريال
-                    </div>
-                  </div>
-                  <div class="info-user text-center">
-                    <div class="img-user">
-                      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="" >
-                    </div>
-                      <div class="name">
-                        مزود الخدمة
-                      </div>
-                    </div>
-                </div>
-              </div>
+              <img src="./img/hall.jpg" alt="" class="bg-img">
             </div>
-            <div class="box-offer">
-              <div class="header-box">
-                <div class="d-flex justify-content-end">
-                  <a href="" class="add-favorite">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </div>
-                <img src="./img/hall.jpg" alt="" class="bg-img">
+            <div class="content">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <h6 class="lg-title fw-normal mb-0">
+                  إسم المناسبة
+                </h6>
+                <a href="#" class="main-btn ">
+                  إستغل العرض
+                </a>
               </div>
-              <div class="content">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <h6 class="lg-title fw-normal mb-0">
-                    إسم المناسبة
-                  </h6>
-                  <a href="#" class="main-btn "> 
-                    إستغل العرض
-                  </a>
-                </div>
-                <div class="text mb-3">
-                  لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
-                  أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد    
-                </div>
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="text-center">
-                    <div class="price d-flex align-items-end gap-1">
-                      <h4 class="mb-0">1500</h4>
-                      <span class="small-price">ريال</span>
-                    </div>
-                    <div class="old-price d-flex align-items-center gap-1">
-                      <del>1500</del>
-                      ريال
-                    </div>
+              <div class="text mb-3">
+                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+              </div>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="text-center">
+                  <div class="price d-flex align-items-end gap-1">
+                    <h4 class="mb-0">1500</h4>
+                    <span class="small-price">ريال</span>
                   </div>
-                  <div class="info-user text-center">
-                    <div class="img-user">
-                      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" alt="" >
-                    </div>
-                      <div class="name">
-                        مزود الخدمة
-                      </div>
-                    </div>
+                  <div class="old-price d-flex align-items-center gap-1">
+                    <del>1500</del>
+                    ريال
+                  </div>
+                </div>
+                <div class="info-user text-center">
+                  <div class="img-user">
+                    <img src="img/profile-picture.webp" alt="">
+                  </div>
+                  <div class="name">
+                    مزود الخدمة
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- End last offers  -->
-      <!-- Start All ratings -->
-      <div class="all-ratings">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between mb-4">
-            <h2 class="lg-title">
-              جميع التصنيفات
-            </h2>
-            <a href="#" class="main-btn btn-yellow "> 
-              عرض الكل
+    </div>
+    <!-- End last offers  -->
+  </section>
+  <header class="header not-print" id="header">
+    <nav class="navbar main-nav py-1">
+      <div class="container-md">
+        <ul class="navbar-nav nav-menu align-items-center align-items-md-start" id="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">
+              <i class='nav-icon bx bx-user-pin'></i>
+              <span class="nav-name">حسابي</span>
             </a>
-          </div>
-          <div class="row row-gap-24 justify-content-center mb-5">
-            <div class="col-4 col-md-3">
-             <div class="btn-inp-check">
-              
-              
-              <div class="box-icon">
-               <i class="fa-solid fa-brush icon"></i>
-              </div>
-              <div class="text">
-               الديكورات والزينة
-              </div>
-             </div>
-            </div>
-            <div class="col-4 col-md-3">
-             <div class="btn-inp-check">
-              
-              
-              <div class="box-icon">
-               <i class="fa-solid fa-landmark icon"></i>
-              </div>
-              <div class="text">
-               القاعات
-              </div>
-             </div>
-            </div>
-            <div class="col-4 col-md-3">
-             <div class="btn-inp-check">
-              
-              
-              <div class="box-icon">
-               <i class="fa-solid fa-wand-magic-sparkles icon"></i>
-              </div>
-              <div class="text">
-               التصميم
-              </div>
-             </div>
-            </div>
-            <div class="col-4 col-md-3">
-             <div class="btn-inp-check">
-              
-              
-              <div class="box-icon">
-               <i class="fa-solid fa-cake-candles icon"></i>
-              </div>
-              <div class="text">
-               المأكولات
-              </div>
-             </div>
-            </div>
-            <div class="col-4 col-md-3">
-             <div class="btn-inp-check">
-              
-              
-              <div class="box-icon">
-               <i class="fa-solid fa-champagne-glasses icon"></i>
-              </div>
-              <div class="text">
-               تجهيزات الزفاف
-              </div>
-             </div>
-            </div>
-           </div>
-        </div>
+            <a class="nav-link" href="#">
+              <i class='nav-icon bx bx-conversation'></i>
+              <span class="nav-name">المحادثات</span>
+            </a>
+            <a class="nav-link" href="#">
+              <i class='nav-icon bx bx-shopping-bag'></i>
+              <span class="nav-name">طلباتي</span>
+            </a>
+            <a class="nav-link" href="#">
+              <i class='nav-icon bx bx-grid-alt'></i>
+              <span class="nav-name">الأقسام</span>
+            </a>
+            <a class="nav-link" href="index.html">
+              <i class="nav-icon bx bx-home"></i>
+              <span class="nav-name">الرئيسية</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <!-- End All ratings -->
-    </section>
-    <header class="header not-print" id="header">
-      <nav class="navbar main-nav py-1">
-        <div class="container-md">
-          <ul
-            class="navbar-nav nav-menu align-items-center align-items-md-start"
-            id="nav-menu"
-          >
-            <li class="nav-item">
-              <a class="nav-link" href="profile.html">
-                <i class='nav-icon bx bx-user-pin'></i>
-                <span class="nav-name">حسابي</span>
-              </a>
-              <a class="nav-link" href="#">
-                <i class='nav-icon bx bx-conversation'></i>
-                <span class="nav-name">المحادثات</span>
-              </a>
-              <a class="nav-link" href="#">
-                <i class='nav-icon bx bx-shopping-bag'></i>
-                <span class="nav-name">طلباتي</span>
-              </a>
-              <a class="nav-link" href="#">
-                <i class='nav-icon bx bx-grid-alt'></i>
-                <span class="nav-name">الأقسام</span>
-              </a>
-              <a class="nav-link" href="index.html">
-                <i class="nav-icon bx bx-home"></i>
-                <span class="nav-name">الرئيسية</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <!-- Bootstrap Framework Js File -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- FontAwesome Library Js File -->
-    <script src="js/all.min.js"></script>
-    <!-- swiper Library Js File -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Main Js File -->
-    <script src="js/main.js"></script>
-  </body>
+    </nav>
+  </header>
+  <!-- Bootstrap Framework Js File -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- FontAwesome Library Js File -->
+  <script src="js/all.min.js"></script>
+  <!-- swiper Library Js File -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- Main Js File -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>

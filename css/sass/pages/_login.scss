@@ -79,8 +79,8 @@
       width: 17px;
       height: 17px;
       &:checked {
-        background-color: $alt-color;
-        border-color: $alt-color;
+        background-color: $main-color;
+        border-color: $main-color;
       }
       &:focus {
         border-color: #ae86fe;

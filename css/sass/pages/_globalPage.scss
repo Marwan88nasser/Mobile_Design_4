@@ -38,9 +38,127 @@ input {
 
 .section {
   padding-top: calc(62px + 1rem) !important;
-  padding-bottom: calc(65.5px + 1rem)  !important;
+  padding-bottom: calc(65.5px + 1rem) !important;
   @media print {
     padding-top: 1rem !important;
-    padding-bottom:1rem !important;
+    padding-bottom: 1rem !important;
+  }
+}
+.landing-page {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 30px);
+    background: #111727;
+    z-index: -1;
+    transform: skewY(-7deg);
+    transform-origin: top left;
+  }
+}
+
+.lan-hr {
+  background-color: #96a3cb;
+  height: 3px;
+}
+
+.main-swiper {
+  &.set-h {
+    height: 580px;
+  }
+  .swiper-wrapper {
+    .swiper-slide {
+      width: 100% !important;
+      height: 480px;
+      .box-img {
+        position: relative;
+        @include full-w-h;
+        img {
+          @include full-w-h;
+          object-fit: cover;
+          border-radius: 32px;
+        }
+        &.img-bg {
+          width: 93%;
+          margin: auto;
+          &::before {
+            content: "";
+            @include reset-position;
+            @include full-w-h;
+            border-radius: 32px;
+            background-image: linear-gradient(
+              to bottom,
+              rgb(206 207 207 / 4%),
+              rgb(255 255 255 / 8%),
+              rgb(0 0 0 / 50%),
+              rgb(0 0 0 / 95%)
+            );
+          }
+          &::after {
+            content: "";
+            @include reset-position;
+            @include full-w-h;
+            border-radius: 32px;
+            transform: scale(1) rotate(-4deg);
+            z-index: -1;
+          }
+          &.main {
+            &::after {
+              background-color: $main-color;
+            }
+          }
+          &.yellow {
+            &::after {
+              background-color: $yellow-color;
+            }
+          }
+          &.pink {
+            &::after {
+              background-color: $pink-color;
+            }
+          }
+          .name {
+            position: absolute;
+            left: 50%;
+            bottom: 7%;
+            transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: $white-color;
+          }
+        }
+        &.img-border {
+          width: 95%;
+          margin: auto;
+          border: 2px solid $yellow-color;
+          border-radius: 32px;
+          img {
+            transform: translate(-10px, -10px);
+          }
+          .name {
+            display: block;
+            text-align: center;
+            font-size: 24px;
+            margin-top: 15px;
+            font-weight: 600
+          }
+        }
+      }
+    }
+  }
+  .swiper-btn {
+    @include circle(38px, 38px);
+    background-color: $main-color;
+    color: $white-color;
+    &:after {
+      font-size: 13px !important;
+    }
   }
 }
