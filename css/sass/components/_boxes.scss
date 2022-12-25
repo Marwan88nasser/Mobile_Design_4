@@ -373,3 +373,76 @@
     }
   }
 }
+
+.box-subject {
+  background-color: $white-color;
+  padding: 1rem;
+  border-bottom: 1px solid $main-border;
+  .title {
+    display: block;
+    color: $main-color;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+  .icon-bar {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 6px;
+    div {
+      @include flex-center;
+      justify-content: flex-start;
+      gap: 5px;
+      i,
+      svg {
+        color: #777777;
+        font-size: 10px;
+      }
+      span {
+        color: #777777;
+        font-size: 12px;
+      }
+    }
+  }
+  .des {
+    color: #4d5257;
+    line-height: 21px;
+    font-size: 13px;
+  }
+}
+
+.progress-order {
+  .progress-state {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 13px;
+    line-height: 1.84;
+    i,
+    svg {
+      font-size: 22px;
+      color: #e0e0e0;
+      &.active {
+        color: #314459;
+      }
+    }
+  }
+}
+
+.contact {
+  padding: 5px 14px !important;
+  font-size: 12px !important;
+  border-radius: 6px !important;
+}
+
+.img-user {
+  object-fit: cover;
+  @include circle(60px, 60px);
+}
+
+.description-text {
+  color: #4d5257;
+  line-height: 21px;
+  font-size: 13px;
+}

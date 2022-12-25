@@ -15,12 +15,32 @@
   min-height: 100vh;
 }
 
+.fs-10px {
+  font-size: 10px;
+}
+
+.fs-11px {
+  font-size: 11px;
+}
+
 .fs-12 {
   font-size: 12px;
 }
 
 .fs-13px {
   font-size: 13px;
+}
+
+.fs-14px {
+  font-size: 14px;
+}
+
+.fs-15px {
+  font-size: 15px;
+}
+
+.fs-16px {
+  font-size: 16px;
 }
 
 .fs-26px {
@@ -58,6 +78,19 @@
   color: $pink-color;
 }
 
+.main-color {
+  color: $main-color;
+}
+.color-222 {
+  color: #6a6969;
+}
+.color-777 {
+  color: #777;
+}
+
+.border-b {
+  border-bottom: 1px solid #e7e5e5;
+}
 @media print {
   .not-print {
     display: none !important;

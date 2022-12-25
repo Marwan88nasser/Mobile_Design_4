@@ -147,7 +147,7 @@ input {
             text-align: center;
             font-size: 24px;
             margin-top: 15px;
-            font-weight: 600
+            font-weight: 600;
           }
         }
       }
@@ -161,4 +161,8 @@ input {
       font-size: 13px !important;
     }
   }
+}
+
+.section-bg {
+  background-color: $section-color;
 }
